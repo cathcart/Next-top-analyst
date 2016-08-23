@@ -141,9 +141,9 @@ projection of P onto the line segment,
 
 <img src="maths_eqns/spree_q.png">
 
-where <img src="maths_eqns/arrow_S_01.png" height="20"> is the vector from point <img src="maths_eqns/S0.png" height="18">
+where <img src="maths_eqns/arrow_S_01.png" height="24"> is the vector from point <img src="maths_eqns/S0.png" height="18">
 to <img src="maths_eqns/S1.png" height="18">, (u,v) is the Euclidean inner-product and
-<img src="maths_eqns/norm.png" height="28"> the Euclidean norm. If 0 ≤ Q ≤ 1, the distance from P to the line defined by
+<img src="maths_eqns/norm.png" height="22"> the Euclidean norm. If 0 ≤ Q ≤ 1, the distance from P to the line defined by
 <img src="maths_eqns/S0.png" height="18"> and <img src="maths_eqns/S1.png" height="18"> should be used. If Q > 1 the distance
 from P to <img src="maths_eqns/S1.png" height="18"> is to be used and P to
 <img src="maths_eqns/S0.png" height="18"> if Q < 0. The reason behind this is that if Q < 0 or
