@@ -123,33 +123,31 @@ The river Spree distribution is a Gaussian distribution following the
 piece-wise approximation of the river given in the additional
 information file. For the internal parameters we are told ‘The function
 peaks at zero and has 95% of its total integral within +/-2730m.’ For a
-Gaussian curve 95% of the distribution falls $\mu \pm 1.96\sigma$. As
-the distribution is centered on the river, $\mu=0$ and from the distance
-of 2730m we get $\sigma=\frac{2.730}{1.96}=1.391$.
+Gaussian curve 95% of the distribution falls within <img src="maths_eqns/spree_within.png" height="14">. As
+the distribution is centered on the river, <img src="maths_eqns/mu.png" height="14"> = 0 and from the distance
+of 2730m we get <img src="maths_eqns/sigma.png" height="14"> = 2.730/1.96 = 1.391.
 
 To calculate the distance we need the shortest distance between the
-point, $\mathbf{P}$, in question and the river. To achieve this we
-calculate the distances between $\mathbf{P}$ and the line fragments
+point, P, in question and the river. To achieve this we
+calculate the distances between P and the line fragments
 making up the piece-wise linear approximation of the river Spree and
 accepting the shortest distance. To find the distance between
-$\mathbf{P}$ and a general line segment defined by the points
-$\mathbf{S_0}$ and $\mathbf{S_1}$, we must calculate the distance from
+P and a general line segment defined by the points
+<img src="maths_eqns/S0.png" height="14"> and <img src="maths_eqns/S1.png" height="14">, we must calculate the distance from
 either the point to the line defined by the endpoints *or* the distance
 from the point to one of the end points. To determine which of these
 distances we should use first we need to calculate the normalised
-projection of $\mathbf{P}$ onto the line segment,
+projection of P onto the line segment,
 
-$$\begin{aligned}
-Q = \frac{(\overrightarrow{S_0P},\overrightarrow{S_0S_1})}{\left\lVert \overrightarrow{S_0S1} \right\rVert^2},\end{aligned}$$
+<img src="maths_eqns/spree_q.png">
 
-where $\overrightarrow{S_0S_1}$ is the vector from point $\mathbf{S_0}$
-to $\mathbf{S_1}$, $(u,v)$ is the Euclidean inner-product and
-$\left\lVert u \right\rVert = \sqrt{(u,u)}$ the Euclidean norm. If
-$0\le Q\le 1$, the distance from $\mathbf{P}$ to the line defined by
-$\mathbf{S_0}$ and $\mathbf{S_1}$ should be used. If $Q>1$ the distance
-from $\mathbf{P}$ to $\mathbf{S_1}$ is to be used and $\mathbf{P}$ to
-$\mathbf{S_0}$ if $Q<0$. The reason behind this is that if $Q<0$ or
-$Q>1$ then the point $\mathbf{P}$ lies far away from the segment and the
+where <img src="maths_eqns/arrow_S_01.png" height="14"> is the vector from point <img src="maths_eqns/S0.png" height="14">
+to <img src="maths_eqns/S1.png" height="14">, (u,v) is the Euclidean inner-product and
+<img src="maths_eqns/norm.png" height="14"> the Euclidean norm. If 0 <= Q <= 1, the distance from P to the line defined by
+<img src="maths_eqns/S0.png" height="14"> and <img src="maths_eqns/S1.png" height="14"> should be used. If Q > 1 the distance
+from P to <img src="maths_eqns/S1.png" height="14"> is to be used and P to
+<img src="maths_eqns/S0.png" height="14"> if Q < 0. The reason behind this is that if Q < 0 or
+Q > 1 then the point P lies far away from the segment and the
 distance to one of the end points should be used instead.
 
 ### The satellite’s path distribution
