@@ -133,7 +133,7 @@ calculate the distances between P and the line fragments
 making up the piece-wise linear approximation of the river Spree and
 accepting the shortest distance. To find the distance between
 P and a general line segment defined by the points
-<img src="maths_eqns/S0.png" height="14"> and <img src="maths_eqns/S1.png" height="14">, we must calculate the distance from
+<img src="maths_eqns/S0.png" height="18"> and <img src="maths_eqns/S1.png" height="18">, we must calculate the distance from
 either the point to the line defined by the endpoints *or* the distance
 from the point to one of the end points. To determine which of these
 distances we should use first we need to calculate the normalised
@@ -141,12 +141,12 @@ projection of P onto the line segment,
 
 <img src="maths_eqns/spree_q.png">
 
-where <img src="maths_eqns/arrow_S_01.png" height="14"> is the vector from point <img src="maths_eqns/S0.png" height="14">
-to <img src="maths_eqns/S1.png" height="14">, (u,v) is the Euclidean inner-product and
-<img src="maths_eqns/norm.png" height="14"> the Euclidean norm. If 0 <= Q <= 1, the distance from P to the line defined by
-<img src="maths_eqns/S0.png" height="14"> and <img src="maths_eqns/S1.png" height="14"> should be used. If Q > 1 the distance
-from P to <img src="maths_eqns/S1.png" height="14"> is to be used and P to
-<img src="maths_eqns/S0.png" height="14"> if Q < 0. The reason behind this is that if Q < 0 or
+where <img src="maths_eqns/arrow_S_01.png" height="18"> is the vector from point <img src="maths_eqns/S0.png" height="18">
+to <img src="maths_eqns/S1.png" height="18">, (u,v) is the Euclidean inner-product and
+<img src="maths_eqns/norm.png" height="18"> the Euclidean norm. If 0 ≤ Q ≤ 1, the distance from P to the line defined by
+<img src="maths_eqns/S0.png" height="18"> and <img src="maths_eqns/S1.png" height="18"> should be used. If Q > 1 the distance
+from P to <img src="maths_eqns/S1.png" height="18"> is to be used and P to
+<img src="maths_eqns/S0.png" height="18"> if Q < 0. The reason behind this is that if Q < 0 or
 Q > 1 then the point P lies far away from the segment and the
 distance to one of the end points should be used instead.
 
