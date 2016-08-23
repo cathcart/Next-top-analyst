@@ -81,7 +81,7 @@ This is done by first using the Mercator projection to find the x,y
 displacement from the origin and then multiplying this by the scale
 factor,
 
-$scale = 2^\text{zoom},$
+<img src="maths_eqns/scale.png">
 
 where zoom is the zoom level of the background map. This mapping, along
 with the reverse pixel location to latitude-longitude, combined with the
@@ -93,10 +93,10 @@ The joint probability distribution function
 
 The joint PDF is defined as,
 
-$$f_\text{joint}(x,y) = f_\text{Brandenburg gate}(x,y) * f_\text{satellite}(x,y) * f_\text{river Spree}(x,y),$$
+<img src="maths_eqns/joint.png">
 
-where $f_\text{Brandenburg gate}(x,y)$, $f_\text{satellite}(x,y)$ and
-$f_\text{river Spree}(x,y)$ are the PDFs centered on the Brandenburg
+where <img src="maths_eqns/f_gate.png" height="28">, <img src="maths_eqns/f_sat.png" height="28"> and
+<img src="maths_eqns/f_spree.png" height="28"> are the PDFs centered on the Brandenburg
 gate, satellite path and the river Spree. In the following sections we
 define the parameters for each of the PDFs.
 
