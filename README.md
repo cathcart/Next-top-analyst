@@ -180,21 +180,20 @@ the possible values we have calculated the joint PDF to be. From this
 set we use the variable $X$ to draw random samples and with this
 construct a cumulative distribution function (CDF),
 
-$$F_X(x) = P(X \le x),$$
+<img src="maths_eqns/cdf.png">
 
-where $P(X \le x)$ is the probability that the random variable, $X$,
-takes a value less than or equal to $x$. The location of the next
-analyst will be at $X_\text{max}$, the maximum observed sample value,
-and $F_X(X_\text{max}) = 1$. The value $X_{99}$ will bound the 1% error
+where P(X ≤ x) is the probability that the random variable, X,
+takes a value less than or equal to x. The location of the next
+analyst will be at <img src="maths_eqns/X_max.png" height="18">, the maximum observed sample value,
+and <img src="maths_eqns/F_X_max.png" height="18">. The value <img src="maths_eqns/X_99.png" height="18"> will bound the 1% error
 in the analyst position. This can be calculated from
 
-$$F_X(X_{99}) = 0.99 \rightarrow X_{99} = F^{-1}_X(0.99),
-\label{eqn_99}$$
+<img src="maths_eqns/F_X_99.png">
 
-where $F^{-1}_X(x)$ is the inverse of the CDF. Plotting the CDF allows
-us to estimate $X_{99}$ and $X_{95}$, the 1% and 5% errors in the next
+where <img src="maths_eqns/F_inv.png" height="18"> is the inverse of the CDF. Plotting the CDF allows
+us to estimate <img src="maths_eqns/X_99.png" height="18"> and <img src="maths_eqns/X_95.png" height="18">, the 1% and 5% errors in the next
 top analyst position. Figure [fig:cdf] shows the plotted CDF and the
-estimated values of $X_{99}$ and $X_{95}$.
+estimated values of <img src="maths_eqns/X_99.png" height="18"> and <img src="maths_eqns/X_95.png" height="18">.
 
 Results
 =======
