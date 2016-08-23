@@ -109,13 +109,13 @@ are,
 
 <img src="maths_eqns/gate_mean_mode.png">
 
-with <img src="maths_eqns/mu.png" height="28"> and <img src="maths_eqns/sigma.png" height="28"> being the two parameters of the distribution.
+with <img src="maths_eqns/mu.png" height="14"> and <img src="maths_eqns/sigma.png" height="14"> being the two parameters of the distribution.
 Rearrangement gives,
 
 <img src="maths_eqns/gate_mu_sigma.png">
 
-where log is the natural logarithm. These expressions give <img src="maths_eqns/mu.png" height="28"> = 1.483
-and <img src="maths_eqns/sigma.png" height="28"> = 0.358.
+where log is the natural logarithm. These expressions give <img src="maths_eqns/mu.png" height="14"> = 1.483
+and <img src="maths_eqns/sigma.png" height="14"> = 0.358.
 
 ### The river Spree
 
