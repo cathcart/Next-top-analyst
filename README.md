@@ -63,7 +63,7 @@ Get background image
 As the problem wants us to use the joint probability distribution
 function (PDF) to find the location of the analyst, it makes sense to
 plot the PDF on top of a map of Berlin. Using [Google maps static
-API](http://developers.google.com/maps/documentation/static-maps/)[^1] a
+API](http://developers.google.com/maps/documentation/static-maps/) a
 background image is downloaded with the locations of the landmarks
 mentioned in the question marked.
 
@@ -71,7 +71,7 @@ Get corners of background image
 -------------------------------
 
 Using the code sketch from [the Google maps javascript
-API](http://developers.google.com/maps/documentation/javascript/examples/map-coordinates)[^2]
+API](http://developers.google.com/maps/documentation/javascript/examples/map-coordinates)
 we can get the latitude and longitude of the corners of the background
 image. Using the north-west boundary point as the origin we can then
 convert any latitude and longitude position into a pixel coordinate.
@@ -216,10 +216,3 @@ suggests that Zalando’s next top analyst is either very close or
 possibly already working in one of their Berlin offices!
 
 <img src ="figures/cdf.png">Cumulative distribution function of the sampled joint PDF values\label{fig:cdf} CDF for estimating the errors in the analyst location. Using equation \eqref{eqn_99} values within 1\% and 5\% of the maximum joint PDF value are estimated, shown in blue and purple. These are used as the bounds for the 1\% and 5\% errors in the location of the next top analyst and are shown in Figure \ref{fig:joint}.}
-
-Code
-====
-
-[^1]: <http://developers.google.com/maps/documentation/static-maps/>
-
-[^2]: <http://developers.google.com/maps/documentation/javascript/examples/map-coordinates>
