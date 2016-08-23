@@ -107,19 +107,15 @@ profile which is log-normal with a mean of 4700m and a mode of 3877m in
 every direction. We know the mean and mode of a log-normal distribution
 are,
 
-$$\begin{aligned}
-mean = e^{\mu+\frac{\sigma^2}{2}}\\
-mode = e^{\mu-\sigma^2},\end{aligned}$$
+<img src="maths_eqns/gate_mean_mode.png">
 
-with $\mu$ and $\sigma$ being the two parameters of the distribution.
+with <img src="maths_eqns/mu.png" height="28"> and <img src="maths_eqns/sigma.png" height="28"> being the two parameters of the distribution.
 Rearrangement gives,
 
-$$\begin{aligned}
-\mu = \frac{1}{3}\left(2log(mean)+log(mode)\right)\\
-\sigma = \sqrt{\frac{2}{3}\left(log(mean) - log(mode)\right)},\end{aligned}$$
+<img src="maths_eqns/gate_mu_sigma.png">
 
-where $log$ is the natural logarithm. These expressions give $\mu=1.483$
-and $\sigma=0.358$.
+where log is the natural logarithm. These expressions give <img src="maths_eqns/mu.png" height="28"> = 1.483
+and <img src="maths_eqns/sigma.png" height="28"> = 0.358.
 
 ### The river Spree
 
