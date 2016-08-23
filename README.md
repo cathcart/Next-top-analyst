@@ -125,7 +125,7 @@ information file. For the internal parameters we are told ‘The function
 peaks at zero and has 95% of its total integral within +/-2730m.’ For a
 Gaussian curve 95% of the distribution falls within <img src="maths_eqns/spree_within.png" height="14">. As
 the distribution is centered on the river, <img src="maths_eqns/mu.png" height="14"> = 0 and from the distance
-of 2730m we get <img src="maths_eqns/sigma.png" height="14"> = 2.730/1.96 = 1.391.
+of 2730m we get <img src="maths_eqns/sigma.png" height="14"> = 2.730 / 1.96 = 1.391.
 
 To calculate the distance we need the shortest distance between the
 point, P, in question and the river. To achieve this we
@@ -155,11 +155,11 @@ distance to one of the end points should be used instead.
 This is normal distribution with 95% probability the next top analyst is
 located within 2400 m distance of the satellite’s path. Using the same
 expression for the river Spree feature we get
-$\sigma=\frac{2.4}{1.96}=1.224$. Distances are calculated from
-$\mathbf{P}$ to the line defined by $\mathbf{S_0}$ and $\mathbf{S_1}$,
-where $\mathbf{S_0}$ and $\mathbf{S_1}$ are points on the great circle
+<img src="maths_eqns/sigma.png" height="14"> = 2.4 / 1.96 = 1.224. Distances are calculated from
+P to the line defined by <img src="maths_eqns/S0.png" height="18"> and <img src="maths_eqns/S1.png" height="18">,
+where <img src="maths_eqns/S0.png" height="18"> and <img src="maths_eqns/S1.png" height="18"> are points on the great circle
 path the satellite transverses. As the map distances we are relatively
-small, $\approx20$km, the circular path of the satellite can be
+small, ≈20km, the circular path of the satellite can be
 approximated by a straight line.
 
 Evaluate the joint PDF on a grid
