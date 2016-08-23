@@ -67,6 +67,10 @@ API](http://developers.google.com/maps/documentation/static-maps/) a
 background image is downloaded with the locations of the landmarks
 mentioned in the question marked.
 
+<img src="figures/map.png">
+
+Here the satellites path is shown as the green line, the piecwise linear approximation of the river Spree as the blue line and the Brandenburg Gate as the red pin. 
+
 Get corners of background image
 -------------------------------
 
