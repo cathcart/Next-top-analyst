@@ -65,7 +65,7 @@ API](http://developers.google.com/maps/documentation/static-maps/) a
 background image is downloaded with the locations of the landmarks
 mentioned in the question marked.
 
-<img src="figures/map.png">
+<img src="figures/map.png" width=50%>
 
 Here the satellites path is shown as the green line, the piecwise linear approximation of the river Spree as the blue line and the Brandenburg Gate as the red pin. 
 
@@ -117,6 +117,9 @@ Rearrangement gives,
 where log is the natural logarithm. These expressions give <img src="maths_eqns/mu.png" height="14"> = 1.483
 and <img src="maths_eqns/sigma.png" height="14"> = 0.358.
 
+The log-normal probability distribution, centered on the Brandenburg Gate is shown in the figure
+<img src="figures/gate.png" width=50%>.
+
 ### The river Spree
 
 The river Spree distribution is a Gaussian distribution following the
@@ -150,6 +153,8 @@ from P to <img src="maths_eqns/S1.png" height="18"> is to be used and P to
 Q > 1 then the point P lies far away from the segment and the
 distance to one of the end points should be used instead.
 
+<img src="figures/river.png" width=50%>
+
 ### The satellite’s path distribution
 
 This is normal distribution with 95% probability the next top analyst is
@@ -162,6 +167,9 @@ path the satellite transverses. As the map distances we are relatively
 small, ≈20km, the circular path of the satellite can be
 approximated by a straight line.
 
+The Gaussian probability distribution centered on the piece-wise approximation of river Spree is shown in the figure
+<img src="figures/sat.png" width=50%>.
+
 Evaluate the joint PDF on a grid
 --------------------------------
 
@@ -172,12 +180,15 @@ can be mapped to latitude and longitude and the PDFs can be evaluated
 and combined. By using cubic interpolation we can plot a smooth joint
 PDF at a significantly reduced computational cost.
 
+The most likely position of Zalandos next top analyst is shown as the red dot in the following figure. It is bounded by blue and purple contours denoting 1% and 5% errors in the analyst’s location. Nearby Zalando offices are shown as green dots. The most likely latitude and longitude of the analyst is calculated as (52.511537, 13.455012).
+<img src="figures/joint.png" width=50%>
+
 Estimate of errors
 ------------------
 
-From the sampled values of the joint PDF we construct the set $S$ of all
+From the sampled values of the joint PDF we construct the set S of all
 the possible values we have calculated the joint PDF to be. From this
-set we use the variable $X$ to draw random samples and with this
+set we use the variable X to draw random samples and with this
 construct a cumulative distribution function (CDF),
 
 <img src="maths_eqns/cdf.png">
@@ -192,22 +203,23 @@ in the analyst position. This can be calculated from
 
 where <img src="maths_eqns/F_inv.png" height="18"> is the inverse of the CDF. Plotting the CDF allows
 us to estimate <img src="maths_eqns/X_99.png" height="18"> and <img src="maths_eqns/X_95.png" height="18">, the 1% and 5% errors in the next
-top analyst position. Figure [fig:cdf] shows the plotted CDF and the
+top analyst position. 
+
+The following figure shows the plotted CDF and the
 estimated values of <img src="maths_eqns/X_99.png" height="18"> and <img src="maths_eqns/X_95.png" height="18">.
+
+<img src ="figures/cdf.png">
 
 Results
 =======
 
-Figure [fig:map] shows the background map taken from Google maps. The
-key locations of the Brandenburg gate, the piece-wise approximation of
-the river Spree and the satellite path are also plotted. The individual
-PDFs associated with these locations are plotted in Figures [fig:gate],
-[fig:river], [fig:sat]. Figure [fig:joint] shows the plot of the joint
-PDF overlaid on top of the background map. The joint PDF suggests that
+<img src="figures/joint.png">
+
+The joint PDF suggests that
 Zalando’s next top analyst can be found at (52.511537, 13.455012). Also
-shown on the plot are several other Zalando offices with half of these
+shown in the plot are several other Zalando offices, with half of these
 falling within the contour denoting the 5% error in the location. This
 suggests that Zalando’s next top analyst is either very close or
 possibly already working in one of their Berlin offices!
 
-<img src ="figures/cdf.png">Cumulative distribution function of the sampled joint PDF values\label{fig:cdf} CDF for estimating the errors in the analyst location. Using equation \eqref{eqn_99} values within 1\% and 5\% of the maximum joint PDF value are estimated, shown in blue and purple. These are used as the bounds for the 1\% and 5\% errors in the location of the next top analyst and are shown in Figure \ref{fig:joint}.}
+
