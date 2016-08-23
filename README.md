@@ -53,9 +53,7 @@ probability density functions evaluated at that point.\
 In the following sections I outline the steps I performed to solve this
 problem. I present the calculated location of Zalando’s next top
 analyst, along with plots of the individual probability density
-functions as well as the joint probability density function. Finally
-I’ve attached the python code I used to perform the calculations and
-generate the plots required.
+functions as well as the joint probability density function.
 
 Get background image
 --------------------
@@ -83,7 +81,7 @@ This is done by first using the Mercator projection to find the x,y
 displacement from the origin and then multiplying this by the scale
 factor,
 
-$$scale = 2^\text{zoom},$$
+$scale = 2^\text{zoom},$
 
 where zoom is the zoom level of the background map. This mapping, along
 with the reverse pixel location to latitude-longitude, combined with the
