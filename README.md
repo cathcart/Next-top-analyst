@@ -37,7 +37,7 @@ density and use it to find Zalando’s next top analyst. The joint
 probability density is constructed by combining the probability
 distributions given in the problem definition. These distributions
 denote the probability of finding the analyst at a given position from
-landmarks in Berlin.\
+landmarks in Berlin.
 For a general position let the probability of finding the analyst using
 the distribution associated with landmark A be P(A). The probability
 then of finding the analyst using the distribution associated with
@@ -49,7 +49,7 @@ each other, i.e. the value of one affects the other. That is not the
 case here, the observations are *independent*, so the joint probability
 for two distributions is P(A,B) = P(A)\*P(B). For this problem the join
 probability density at a given point is the product of all the
-probability density functions evaluated at that point.\
+probability density functions evaluated at that point.
 In the following sections I outline the steps I performed to solve this
 problem. I present the calculated location of Zalando’s next top
 analyst, along with plots of the individual probability density
