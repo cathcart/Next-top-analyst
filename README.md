@@ -222,4 +222,15 @@ falling within the contour denoting the 5% error in the location. This
 suggests that Zalando’s next top analyst is either very close or
 possibly already working in one of their Berlin offices!
 
+Running the code
+=======
+My solution can be run either with 
 
+``` bash
+pip install -r requirements.txt
+python main.py
+```
+or using docker-compose with
+``` bash
+docker-compose run solution
+```
