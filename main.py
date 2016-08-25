@@ -1,3 +1,4 @@
+import os
 import matplotlib
 matplotlib.use('Agg')
 import numpy as np
@@ -142,7 +143,8 @@ class DensityMap(object):
         map_center = G_LatLng(52.5089253483, 13.4215381072)
         background = BackgroundMap(map_center)
 
-#        c = background.get_map()
+	if not os.path.exists('map.png'):
+            c = background.get_map()
 
         gate = G_LatLng(52.516288,13.377689)
         myGate = Gate(background, gate)

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  solution:
+    build: .
+    command: sh run.sh
+    volumes:
+    - .:/code
