@@ -3,6 +3,8 @@ import matplotlib
 matplotlib.use('Agg')
 import numpy as np
 import urllib
+import requests
+import shutil
 import matplotlib.pyplot as plt
 from scipy.misc import imread
 import math
@@ -135,8 +137,12 @@ class BackgroundMap(object):
 	#add satellite
 	s += "&path=color:green|weight:5|52.590117,13.39915|52.437385,13.553989" 
 
-	image = urllib.URLopener()
-	image.retrieve(s, "map.png")
+	#image = urllib.URLopener()
+	#image.retrieve(s, "map.png")
+	response = requests.get(s, stream=True)
+        with open("map.png", "wb") as out_file:
+            shutil.copyfileobj(response.raw, out_file)
+        del response
 
 class DensityMap(object):
     def __init__(self):
